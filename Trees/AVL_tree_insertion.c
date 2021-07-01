@@ -54,7 +54,7 @@ int main()
 			root=insert(root,x);
 			break;
 		case 3: 
-			printf("\nPreorder sequence:\n");
+			printf("\nNodes of a AVl tree : ");
 			inorder(root);
 			break;
 	}
