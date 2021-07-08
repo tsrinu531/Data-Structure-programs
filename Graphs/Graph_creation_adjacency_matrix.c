@@ -109,10 +109,16 @@ void delete_node(int u) {
         printf("This node is not present in the graph\n");
         return;
     }
-    for (i = u; i <= n - 1; i++)
-        for (j = 1; j <= n; j++) {
-            adj[j][i] = adj[j][i + 1];
-            adj[i][j] = adj[i + 1][j];
-        }
+    for(i=node ; i<=n-1;i++)
+    for(j=1;j<=n ;j++)
+	{
+		if(i==j)
+			graph[i][j]=0;
+		else
+		{
+			graph[j][i]=graph[j][i+1];
+			graph[i][j]=graph[i+1][j];	
+		}
+	}
     n--;
 }
