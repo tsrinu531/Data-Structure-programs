@@ -51,5 +51,5 @@ void bfs(int v)
       }
       f=f+1;      // remove the vertex at front of the queue
       if(f<=r)    // as long as there are elements in the queue
-            bfs(q[f]);  // peform bfs again on the vertex at front of the queue
+            bfs(queue[f]);  // peform bfs again on the vertex at front of the queue
 }
